@@ -66,12 +66,12 @@ from LitaCustomerData Group by Region Order by 2 DESC
 Select TOP 1 SubscriptionType, Count(CustomerID) as Customers 
 From LitaCustomerData Group by SubscriptionType
 
-```Select SubscriptionType, Count(CustomerID) as Customers 
+Select SubscriptionType, Count(CustomerID) as Customers 
 From LitaCustomerData Group by SubscriptionType
 
 3. Customers who cancelled their subscription within 6months
    
-``` Select * from LitaCustomerData Where Canceled = 'True' 
+ Select * from LitaCustomerData Where Canceled = 'True' 
 AND DATEDIFF(Month,SubscriptionStart,SubscriptionEnd) <= 6
 
 -----Alternative Query
@@ -96,12 +96,12 @@ Select CustomerId,CustomerName,Region From LitaCustomerData Where DATEDIFF(MONTH
 
 6. Total revenue by subscription type
    
-```Select Subscriptiontype, Sum(revenue) As TotalRevenue From LitaCustomerData
+Select Subscriptiontype, Sum(revenue) As TotalRevenue From LitaCustomerData
 Group by Subscriptiontype Order by TotalRevenue DESC
 
 7. Top 3 regions by subscription cancellation
 
-```Select Top 3 Region, Count (Canceled) AS SubCancellation FROM LitaCustomerData
+ Select Top 3 Region, Count (Canceled) AS SubCancellation FROM LitaCustomerData
   Where Canceled = 'True' 
   Group by Region
 
