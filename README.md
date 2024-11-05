@@ -1,5 +1,5 @@
 # LITA-PROJECT-2
-Customer Subscription Behavior Analysis for MLITAFLIX Subscription Service
+Customer Data Subscription Analysis for MLITAFLIX Subscription Service
 
 ## Project Title: MLITAFLIX Sales Data Analysis
 
@@ -17,9 +17,11 @@ This project involves analyzing customer data for a subscription service to iden
 6. [Data Visuals](#data-visuals)
 7. [PowerBI Dashboard](#powerbi-dashboard)
 8. [Results](#results)
-9. Conclusion(#conclusion)
+9. [Conclusion](#conclusion)
 
 ### Background and Objective
+LITAFLIX is a subscription-based service. it wanted to better understand its customer base and subscription trends in Nigeria. The main objectives were to identify which subscription types and regions were most profitable, track patterns in subscription renewals and cancellations, and understand regional performance over the past two years to help the business make data driven decisions and better understand customer behaviour.
+To meet these objectives, I developed an interactive Power BI dashboard that allows stakeholders to explore detailed trends in customer subscriptions and revenue generation. This analysis focused on two key years, 2022 and 2023, providing a comprehensive view of revenue, cancellations, and customer behavior.
 
 ### Data Sources and tools used
 Data Source: Data was gotten from the incubator hub- Ladies in tech Africa (LITA) Capstone Project in the form of an excel sheet
@@ -37,20 +39,23 @@ Tools used include;
   5. Canceled - shows if it an active or inactive subscription
   6. Revenue - Revenue generated from each customer's subscription
 
- - Methodology
+ - #### Methodology
    1. Initial data exploration in excel to understand the dataset
-   2. Data cleaning; Removed duplicates
-   3. Data summarization with Pivot tables to find key metrics and calculations
-   4. import flat file to SQL
-   5. SQL queries for more detailed analysis
-   6. PowerBI creation of dashboard
+   2. Data was cleaned (Removed duplicates) and structured in Excel
+   3. Data summarization with Pivot tables to find key metrics and calculation
+   4. Flat file was imported into SQL server environment for more detailed analysis
+   5. Data was imported into PowerBI for visualization 
+   6. measures, calculated fields, and designed visualizations were used to answer key business questions
+      
+
 
    ### Key Insights and Interpretation
-- Total revenue generated in the years
-- Most popular subscription type
-- Average duration of customer subscription
-- Cancellation and renewal rates
-- factors contributing to subscription cancellation
+  - Revenue and Subscription Patterns: Using total revenue calculations and customer counts segmented by subscription type and region, I aimed to pinpoint which subscriptions and regions were most profitable.
+  - Customer Segmentation and Regional Insights: Customer count was broken down by region and subscription type to understand regional and customer preferences.
+  - Cancellation rate and Revenue Impact: The overall cancellation rate and total revenue lost from cancellations helped to know where customer retention strategies could be improved and understand the business better. I also visualized the cancellation rate across each region, subscription type, and year.
+  - Subscription Duration and Yearly Trends:  I provided insights into customer loyalty and engagement trends across different subscription types and regions.
+  -  Most popular subscription type
+  -  factors contributing to subscription cancellation
 
 
 ### Code and Queries Preview
@@ -132,6 +137,15 @@ where Canceled = 'FALSE'
 
 ### Results
 
+From the interactive dashboard created, we get a clear story that help MLITAFLIX understand the business more. 
+- **Total Revenue:**  LITAFLIX generated a total revenue of ₦67.5M across all regions, with the Basic subscription type contributing the highest share at ₦33.8M across all regions.
+- **Customer Distribution and Popular Subscriptions:**  Basic subscriptions dominated, with 16.9K customers choosing this option, followed by Premium and Standard. Regionally, each area (East, South, North, and West) held a near-equal share, with slight diffference in customer counts.
+- **Cancellations and Revenue Impact:**  The cancellation rate stood at 45%, resulting in a significant revenue loss of ₦30.3M. Each region had similar cancellation counts, indicating that retention issues are consistent across regions.The dashboard allows users to toggle between active and canceled counts, showing that 55% of the total subscriptions are still active.
+- **Subscription Year Trends:**  The data can be filtered by year (2022 or 2023) to view how subscriptions have grown over time. The data indicated a steady subscription rate with active subscriptions accounting for 55% of the total.
+
+
+### Conclusion
+This interactive dashboard will be a very powerful tool to the stakeholders of MLITAFLIX in making decisions and coming up with startegies to drive revenue, customer retention in regions and reduce cancellation rate.
 
 
 
