@@ -3,7 +3,10 @@ Customer Subscription Behavior Analysis for MISOSA Subscription Service
 
 ## Project Title: MLITAFLIX Sales Data Analysis
 
-### Project Overview: This project involves analyzing customer data for a subscription service to identify segments and trends. tHE goal is to understand customer behavior, track subscription types, and identify key trends in cancellations and renewals. The final deliverable is a Power BI dashboard that presents THE analysis.
+### Project Overview
+
+This project involves analyzing customer data for a subscription service to identify segments and trends. tHE goal is to understand customer behavior, track subscription types, and identify key trends in cancellations and renewals. The final deliverable is a Power BI dashboard that presents THE analysis.
+
 
 #### Outline
 1. [Background and Objective](#background-and-objective)
@@ -41,7 +44,7 @@ Tools used include;
    5. SQL queries for more detailed analysis
    6. PowerBI creation of dashboard
 
-   ### KEY INSIGHTS AND INTEPRETATIONS
+   ### Key Insights and Interpretation
 - Total revenue generated in the years
 - Most popular subscription type
 - Average duration of customer subscription
@@ -107,8 +110,12 @@ where Canceled = 'True'
 
 Select Count(Canceled) as ACTIVESUB From LitaCustomerData
 where Canceled = 'FALSE' 
+
+
 ---
       POWERBI DAX
+
+
 
 
       
