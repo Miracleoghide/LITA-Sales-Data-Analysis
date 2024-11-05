@@ -16,8 +16,8 @@ This project involves analyzing customer data for a subscription service to iden
 5. [Code and Queries preview](#code-and-queries-preview)
 6. [Data Visuals](#data-visuals)
 7. [PowerBI Dashboard](#powerbi-dashboard)
-8. [Challenges and Learning](#challenges-and-learning)
-
+8. [Results](#results)
+9. Conclusion(#conclusion)
 
 ### Background and Objective
 
@@ -66,12 +66,12 @@ from LitaCustomerData Group by Region Order by 2 DESC
 Select TOP 1 SubscriptionType, Count(CustomerID) as Customers 
 From LitaCustomerData Group by SubscriptionType
 
-Select SubscriptionType, Count(CustomerID) as Customers 
+```Select SubscriptionType, Count(CustomerID) as Customers 
 From LitaCustomerData Group by SubscriptionType
 
 3. Customers who cancelled their subscription within 6months
    
-Select * from LitaCustomerData Where Canceled = 'True' 
+``` Select * from LitaCustomerData Where Canceled = 'True' 
 AND DATEDIFF(Month,SubscriptionStart,SubscriptionEnd) <= 6
 
 -----Alternative Query
@@ -96,32 +96,41 @@ Select CustomerId,CustomerName,Region From LitaCustomerData Where DATEDIFF(MONTH
 
 6. Total revenue by subscription type
    
-Select Subscriptiontype, Sum(revenue) As TotalRevenue From LitaCustomerData Group by Subscriptiontype Order by TotalRevenue DESC
+```Select Subscriptiontype, Sum(revenue) As TotalRevenue From LitaCustomerData
+Group by Subscriptiontype Order by TotalRevenue DESC
 
 7. Top 3 regions by subscription cancellation
 
-Select Top 3 Region, Count (Canceled) AS SubCancellation FROM LitaCustomerData
+```Select Top 3 Region, Count (Canceled) AS SubCancellation FROM LitaCustomerData
   Where Canceled = 'True' 
   Group by Region
 
 8. Total number of canceled and active subscriptions
    
-Select Count(Canceled) as INACTIVESUB From LitaCustomerData
+```Select Count(Canceled) as INACTIVESUB From LitaCustomerData
 where Canceled = 'True' 
 
-Select Count(Canceled) as ACTIVESUB From LitaCustomerData
+```Select Count(Canceled) as ACTIVESUB From LitaCustomerData
 where Canceled = 'FALSE' 
 
 
 ---
 
 ### Data Visuals
+![image](https://github.com/user-attachments/assets/1e7772b8-c4d6-4028-a504-ca012f238255)
+![project 2 excel](https://github.com/user-attachments/assets/a636ce58-31ba-4591-b3c6-105d014f0f50)
+![sql p23](https://github.com/user-attachments/assets/85e82515-d69b-4e15-b4e9-6ea52fea67ae)
+![sql p22](https://github.com/user-attachments/assets/af40df26-7719-476f-958f-130b964b999b)
+![sql p21](https://github.com/user-attachments/assets/8c1c2e60-4cb4-45c3-a263-60f44db0cad5)
+![sql p2](https://github.com/user-attachments/assets/14c39286-dd37-47de-a942-d22d87bdd743)
+![project 2excel cont](https://github.com/user-attachments/assets/a475dada-8bf1-47d8-a66b-10afe4106d76)
 
-    
 
 ### PowerBI Dashboard
 
 ![dashboard project 2](https://github.com/user-attachments/assets/a35955a0-f6e9-4c7a-b9cd-afe1daf7b12f)
+
+### Results
 
 
 
