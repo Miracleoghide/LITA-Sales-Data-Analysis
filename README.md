@@ -108,10 +108,10 @@ Group by Subscriptiontype Order by TotalRevenue DESC
 8. Total number of canceled and active subscriptions
    
 ```Select Count(Canceled) as INACTIVESUB From LitaCustomerData
-where Canceled = 'True' 
+where Canceled = 'True' ```
 
 ```Select Count(Canceled) as ACTIVESUB From LitaCustomerData
-where Canceled = 'FALSE' 
+where Canceled = 'FALSE' ```
 
 
 ---
