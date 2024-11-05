@@ -1,11 +1,11 @@
 # LITA-PROJECT-2
-Customer Subscription Behavior Analysis for MISOSA Subscription Service
+Customer Subscription Behavior Analysis for MLITAFLIX Subscription Service
 
 ## Project Title: MLITAFLIX Sales Data Analysis
 
 ### Project Overview
 
-This project involves analyzing customer data for a subscription service to identify segments and trends. tHE goal is to understand customer behavior, track subscription types, and identify key trends in cancellations and renewals. The final deliverable is a Power BI dashboard that presents THE analysis.
+This project involves analyzing customer data for a subscription service to identify segments and trends. The goal is to understand customer behavior, track subscription types, and identify key trends in cancellations and renewals. The final deliverable is a Power BI dashboard that presents THE analysis.
 
 
 #### Outline
@@ -14,8 +14,9 @@ This project involves analyzing customer data for a subscription service to iden
 3. [Exploratory Data Analysis](#exploratory-data-analysis)
 4. [Key Insights and Interpretation](#key-insights-and-interpretation)
 5. [Code and Queries preview](#code-and-queries-preview)
-6. [PowerBI Dashboard](#powerbi-dashboard)
-7. [Challenges and Learning](#challenges-and-learning)
+6. [Data Visuals](#data-visuals)
+7. [PowerBI Dashboard](#powerbi-dashboard)
+8. [Challenges and Learning](#challenges-and-learning)
 
 
 ### Background and Objective
@@ -113,10 +114,14 @@ where Canceled = 'FALSE'
 
 
 ---
-      POWERBI DAX
+
+### Data Visuals
+
+    
 
 ### PowerBI Dashboard
 
+![dashboard project 2](https://github.com/user-attachments/assets/a35955a0-f6e9-4c7a-b9cd-afe1daf7b12f)
 
 
 
