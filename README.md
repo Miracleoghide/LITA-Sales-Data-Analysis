@@ -1,7 +1,5 @@
-# LITA-PROJECT-2
+## Project Title: MLITAFLIX Customer Data Analysis
 Customer Data Subscription Analysis for MLITAFLIX Subscription Service
-
-## Project Title: MLITAFLIX Sales Data Analysis
 
 ### Project Overview
 
